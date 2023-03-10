@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 22cbd227fc2c0194eb2307d442e71729
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: '{"shaderPath":"Shader Graphs/VertexColorURP","attributes":[]}'
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
