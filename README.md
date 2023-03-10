@@ -1,5 +1,9 @@
 ## Team Name
 
+Orion
+
+## Project title
+
 Metaverse Space School
 
 <img src="img\MetaverseSpaceSchoolPosterSmall.png" alt="Metaverse Space School">
@@ -111,3 +115,11 @@ https://github.com/lachoneus8/metaverse-space-school/
 
 ## Video Link to 20 minute demo video
 [https://youtu.be/B06l8M_bmpI](https://youtu.be/B06l8M_bmpI)
+
+## Note on source control
+
+We used Plastic SCM for our source repository, but didn't realize until after we started that we couldn't make that repo public.  Here is our commit history:
+<img src="img\PlasticSCMCommitHistory.png" alt="Plastic SCM Commit History">
+
+## Project board
+<img src="img\TeamOrionProjectBoard.png" alt="Project Board">
