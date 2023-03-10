@@ -14,6 +14,10 @@ Lazar Colin
 
 Ke Wang
 
+## Itch IO submission link
+
+https://hassancortex.itch.io/metaverse-space-school
+
 ## Project Description
 
 When was the last time you looked up at the sky, at the moon and stars, and watched how they shine for you? Do you remember the first time you learned that there are other planets in this world that are far, far away and started wondering how they look and feel up close instead of just looking at boring images on a piece of paper?
