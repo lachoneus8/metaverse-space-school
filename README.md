@@ -113,7 +113,7 @@ Nil
 https://github.com/lachoneus8/metaverse-space-school/
   
 
-## Video Link to 20 minute demo video
+## Video Link to 2 minute demo video
 [https://youtu.be/B06l8M_bmpI](https://youtu.be/B06l8M_bmpI)
 
 ## Note on source control
