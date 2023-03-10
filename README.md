@@ -2,12 +2,21 @@
 
 Metaverse Space School
 
+<img src="img\MetaverseSpaceSchoolPosterSmall.png" alt="Metaverse Space School">
+
 ## Member:
 
 Hassan Anifowose
+
 Dave Stevens
+
 Lazar Colin
+
 Ke Wang
+
+## Itch IO submission link
+
+https://hassancortex.itch.io/metaverse-space-school
 
 ## Project Description
 
