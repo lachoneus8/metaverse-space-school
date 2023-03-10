@@ -2,11 +2,16 @@
 
 Metaverse Space School
 
+<img src="img\MetaverseSpaceSchoolPosterSmall.png" alt="Metaverse Space School">
+
 ## Member:
 
 Hassan Anifowose
+
 Dave Stevens
+
 Lazar Colin
+
 Ke Wang
 
 ## Project Description
