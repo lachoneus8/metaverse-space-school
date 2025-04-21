@@ -107,11 +107,11 @@ public class ControllerManager : MonoBehaviour
         /// <summary>
         /// The Line renderer that is associated with this state
         /// </summary>
-        public XRInteractorLineVisual m_LineRenderer;
+        public UnityEngine.XR.Interaction.Toolkit.Interactors.Visuals.XRInteractorLineVisual m_LineRenderer;
         /// <summary>
         /// The interactor instance that is associated with this state
         /// </summary>
-        public XRBaseInteractor m_Interactor;
+        public UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor m_Interactor;
 
         /// <summary>
         /// When passed a gameObject, this function will scrape the game object for all valid components that we will
@@ -124,8 +124,8 @@ public class ControllerManager : MonoBehaviour
             if (m_GO != null)
             {
                 m_XRController = m_GO.GetComponent<XRController>();
-                m_LineRenderer = m_GO.GetComponent<XRInteractorLineVisual>();
-                m_Interactor = m_GO.GetComponent<XRBaseInteractor>();
+                m_LineRenderer = m_GO.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.Visuals.XRInteractorLineVisual>();
+                m_Interactor = m_GO.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor>();
 
                 Leave();               
             }

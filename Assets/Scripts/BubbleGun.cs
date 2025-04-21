@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-[RequireComponent(typeof(XRGrabInteractable))]
+[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable))]
 public class BubbleGun : MonoBehaviour
 {
-    XRGrabInteractable m_InteractableBase;
+    UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable m_InteractableBase;
     Animator m_Animator;
     
     [SerializeField] ParticleSystem m_BubbleParticleSystem = null;
@@ -18,7 +18,7 @@ public class BubbleGun : MonoBehaviour
 
     protected void Start()
     {
-        m_InteractableBase = GetComponent<XRGrabInteractable>();
+        m_InteractableBase = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         m_Animator = GetComponent<Animator>();
         m_InteractableBase.selectExited.AddListener(DroppedGun);
         m_InteractableBase.activated.AddListener(TriggerPulled);

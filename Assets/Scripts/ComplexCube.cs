@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-[RequireComponent(typeof(XRGrabInteractable), typeof(Renderer))]
+[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable), typeof(Renderer))]
 public class ComplexCube : MonoBehaviour
 {
-    XRBaseInteractable m_Interactable;
+    UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable m_Interactable;
     Renderer m_Renderer;
     
     static Color s_HoveredColor = new Color(0.929f, 0.094f, 0.278f);
@@ -12,7 +12,7 @@ public class ComplexCube : MonoBehaviour
 
     protected void OnEnable()
     {
-        m_Interactable = GetComponent<XRBaseInteractable>();
+        m_Interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>();
         m_Renderer = GetComponent<Renderer>();
         
         m_Interactable.firstHoverEntered.AddListener(OnFirstHoverEntered);

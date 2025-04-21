@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using Photon.Pun;
 
-public class XRGrabNetworkInteractable : XRGrabInteractable
+public class XRGrabNetworkInteractable : UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
 {
     private PhotonView photonView;
     
