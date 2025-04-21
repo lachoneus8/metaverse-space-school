@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes Main/Backup Scene.unity
     guid: 378c401610e4af24daa00bad155580b4
   - enabled: 1
@@ -24,3 +24,4 @@ EditorBuildSettings:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f3d36b094c7e90a48bfeecc8253553a0, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 12fb2884f45e57a48a232b374653f4dd, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 240a10cc444ef854db9ae1d3741dfa21, type: 2}
+  m_UseUCBPForAssetBundles: 0
