@@ -28,7 +28,18 @@ In order to set up the automation to add new worlds, the following needs to be d
 The VR space moves really fast.  This project was originally built in an earlier version of Unity, with a bunch of tools that were outdated according to latest best practice.  Some effort was done in the original branch (https://github.com/lachoneus8/metaverse-space-school/tree/multi-planetary) to bring it up to Unity 6.0.35f1, and update the VR packages used to the latest.  This actually took quite a bit of work.  This branch (multi-planetary-feature) will just cover the effort from that starting point though.  In the original project, there was limited functionality built in to allow for multiple people to join together in the experience, but this has been removed as bringing it up to date would have taken more effort than I could spare at the time.
 
 ## AI prompts used
+All prompts were fed into Copilot.
+
 The summary under the Background section above was written by AI.  I entered in the full summary of the project located here: https://github.com/lachoneus8/metaverse-space-school/blob/main/README.md then made a this promt: 
 `Could you provide a summary of this project?  Please keep it a single paragraph only a couple sentences long.`
+
 AI was also used to refresh me on MD file markup.
+
+For each world added, I used the following promt to get the information to enter: Could you provide me with the following information about [world name, AKA Marse etc]? Gravity in m/s Minimum nighttime temperature in F at the equator Maximum daytime temperature in F at the equator Day/night cycle length in hours and minutes Distance from the sun in AU
+
+I was having trouble getting good textures to use for planet surfaces, so used this prompt:
+Could you help me craft a prompt to create a texture of the surface of Mercury, which will be used for a ground plane in a Unity project?  The images I keep getting are of a perspective viewpoint, or show me the whole planet.
+
+Here is the updated prompt I got, which had much better results:
+Generate a 2048x2048 seamless texture of the surface of Mercury, viewed directly from above at ground level. The texture should be realistic, showcasing Mercury's rocky, cratered terrain with fine surface details. It should be evenly lit, avoiding harsh shadows or atmospheric effects, and designed to tile seamlessly for use in a Unity ground plane material.  Make sure the texture is seamlessly tileable.
 
