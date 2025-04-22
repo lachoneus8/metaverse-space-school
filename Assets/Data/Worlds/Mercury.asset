@@ -22,4 +22,4 @@ MonoBehaviour:
     hours: 0
     minutes: 0
   distanceFromSunAU: 0.39
-  optGroundMaterial: {fileID: 0}
+  optGroundMaterial: {fileID: 2100000, guid: 3015b67a95b9b6740b10a2af9434e13f, type: 2}
