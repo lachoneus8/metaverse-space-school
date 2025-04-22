@@ -1,6 +1,9 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DataDrivenWorldSetup : MonoBehaviour
 {
@@ -18,6 +21,8 @@ public class DataDrivenWorldSetup : MonoBehaviour
     public GravitySetting gravitySetting;
 
     public MeshRenderer groundPlane;
+
+    public Dropdown planetChoiceDropdown;
 
     private WorldData currentWorldData;
 
@@ -51,6 +56,31 @@ public class DataDrivenWorldSetup : MonoBehaviour
         {
             groundPlane.material = currentWorldData.optGroundMaterial;
         }
+
+        SetupWorldDropdown(worldIndexObj);
     }
 
+    private void SetupWorldDropdown(CurrentWorldIndex currentIndex)
+    {
+        planetChoiceDropdown.ClearOptions();
+
+        var planetOptionNames = new List<string>();
+
+        int worldIdx = 0;
+        int toSelect = 0;
+        foreach (var world in worldDataList)
+        {
+            planetOptionNames.Add(world.worldName);
+            // Check against the currently selected world index.
+            // If it matches, mark it so we can have this one be the one currently highlighted.
+            if (worldIdx == currentIndex.currentWorldIndex)
+            {
+                toSelect = worldIdx;
+            }
+            ++worldIdx;
+        }
+
+        planetChoiceDropdown.AddOptions(planetOptionNames);
+        planetChoiceDropdown.value = toSelect;
+    }
 }

@@ -726,6 +726,7 @@ MonoBehaviour:
   distanceFromSunText: {fileID: 482642161}
   gravitySetting: {fileID: 590698898}
   groundPlane: {fileID: 647100389}
+  planetChoiceDropdown: {fileID: 1428445548}
 --- !u!4 &295073563
 Transform:
   m_ObjectHideFlags: 0
