@@ -1,9 +1,8 @@
 using System;
-using System.Security.Policy;
 using UnityEngine;
 
 [CreateAssetMenu(fileName="World", menuName="MetaverseSpaceSchool/CreateWorld")]
-public class WorldDataEditor : ScriptableObject
+public class WorldData : ScriptableObject
 {
     #region Classes
     /// <summary>
@@ -15,6 +14,19 @@ public class WorldDataEditor : ScriptableObject
         public int days;
         public int hours;
         public int minutes;
+
+        public override string ToString()
+        {
+            string result = "";
+            // Only show days if it is > 0
+            if (days > 0)
+            {
+                result += "Days: " + days + " ";
+            }
+            result += "Hours: " + hours + " Minutes: " + minutes;
+
+            return result;
+        }
     }
     #endregion
 
