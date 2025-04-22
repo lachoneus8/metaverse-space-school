@@ -18,7 +18,8 @@ MonoBehaviour:
   minTempF: -93
   maxTempF: 70
   dayNightRotationLength:
+    days: 0
     hours: 24
     minutes: 39
   distanceFromSunAU: 1.52
-  optGroundMaterial: {fileID: 0}
+  optGroundMaterial: {fileID: 2100000, guid: 1a07bb5140f71a34d86ea45eff14a469, type: 2}

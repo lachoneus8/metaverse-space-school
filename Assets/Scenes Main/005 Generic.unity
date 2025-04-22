@@ -712,12 +712,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8275092d9d25c41952161a1998da55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldData: {fileID: 0}
+  currentWorldIndexPrefab: {fileID: 534823628413245855, guid: 03b0e92441728014086a4a84e531dadb, type: 3}
+  worldDataList:
+  - {fileID: 11400000, guid: 0fff1299a6c1f744d887ea21894eb4be, type: 2}
+  - {fileID: 11400000, guid: 60e16f4e3f28b1045b140e2f4e20277b, type: 2}
+  - {fileID: 11400000, guid: 958f2ab7897aa2942910f92d625b2820, type: 2}
+  - {fileID: 11400000, guid: 10bd6262a54ec054cb852f5f1d8f2bce, type: 2}
+  - {fileID: 11400000, guid: d7363ba7dbc8c034b83143bc8cc686d1, type: 2}
   titleText: {fileID: 2123256664}
   gravityText: {fileID: 1639841549}
   temperatureText: {fileID: 1127315149}
   dayLengthText: {fileID: 768517462}
   distanceFromSunText: {fileID: 482642161}
+  gravitySetting: {fileID: 590698898}
   groundPlane: {fileID: 647100389}
 --- !u!4 &295073563
 Transform:
@@ -2282,6 +2289,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1980187690, guid: ecdbf3dc6204e7a46943712ecfb94c12, type: 3}
   m_PrefabInstance: {fileID: 564329215}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &590698898 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2390086277797117471, guid: cac1a577074dead4db51e715c4ae1cf5, type: 3}
+  m_PrefabInstance: {fileID: 1530888952}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399eb994f9197124ba734340ae2cafa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &635248269
 GameObject:
   m_ObjectHideFlags: 0
