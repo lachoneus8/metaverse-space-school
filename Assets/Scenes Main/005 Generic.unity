@@ -727,6 +727,7 @@ MonoBehaviour:
   gravitySetting: {fileID: 590698898}
   groundPlane: {fileID: 647100389}
   planetChoiceDropdown: {fileID: 1428445548}
+  transitionController: {fileID: 1058582909}
 --- !u!4 &295073563
 Transform:
   m_ObjectHideFlags: 0
@@ -4418,10 +4419,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1801217372}
     - target: {fileID: 6952717399110328069, guid: 20131f37929104a448b21d6088fc1ab9, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952717399110328069, guid: 20131f37929104a448b21d6088fc1ab9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -4967,6 +4964,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
   m_PrefabInstance: {fileID: 989394383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1193686630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3352532633672402781, guid: f3f498c55601f974fb5292e8b8434aba, type: 3}
+  m_PrefabInstance: {fileID: 1801217371}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1197504169
 GameObject:
@@ -6206,9 +6208,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1058582909}
-        m_TargetAssemblyTypeName: TransitionController, Assembly-CSharp
-        m_MethodName: GoToEarth
+      - m_Target: {fileID: 295073562}
+        m_TargetAssemblyTypeName: DataDrivenWorldSetup, Assembly-CSharp
+        m_MethodName: OnTravelToWorld
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7074,6 +7076,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7532441842472084980, guid: f3f498c55601f974fb5292e8b8434aba, type: 3}
+      propertyPath: TargetObject
+      value: 
+      objectReference: {fileID: 1193686630}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

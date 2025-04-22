@@ -24,21 +24,21 @@ public class DataDrivenWorldSetup : MonoBehaviour
 
     public Dropdown planetChoiceDropdown;
 
+    public TransitionController transitionController;
+
     private WorldData currentWorldData;
+
+    public void OnTravelToWorld()
+    {
+        // Gets the object that tracks the next world between scenes, and set its value based on the current dropdown
+        var worldIndexObj = GetWorldIndex();
+        worldIndexObj.currentWorldIndex = planetChoiceDropdown.value;
+        transitionController.GoToGenericWorld();
+    }
 
     void Start()
     {
-        // See if the world index already exists (since it was loaded in another scene)
-        var currentWorldIndex = GameObject.Find("CurrentWorldIndex");
-        if (currentWorldIndex == null)
-        {
-            // Since it is not there, create it, and mark it so it isn't destroyed when the scene changes
-            currentWorldIndex = Instantiate(currentWorldIndexPrefab);
-            DontDestroyOnLoad(currentWorldIndex);
-        }
-
-        // Get the current world Data by using the world index value, and pulling out the index
-        var worldIndexObj = currentWorldIndex.GetComponent<CurrentWorldIndex>();
+        var worldIndexObj = GetWorldIndex();
         currentWorldData = worldDataList[worldIndexObj.currentWorldIndex];
 
         // Update text according to the world we're using
@@ -58,6 +58,22 @@ public class DataDrivenWorldSetup : MonoBehaviour
         }
 
         SetupWorldDropdown(worldIndexObj);
+    }
+
+    private CurrentWorldIndex GetWorldIndex()
+    {
+        // See if the world index already exists (since it was loaded in another scene)
+        CurrentWorldIndex currentWorldIndex = GameObject.FindFirstObjectByType<CurrentWorldIndex>();
+        if (currentWorldIndex == null)
+        {
+            // Since it is not there, create it, and mark it so it isn't destroyed when the scene changes
+            var instantiated = Instantiate(currentWorldIndexPrefab);
+            currentWorldIndex = instantiated.GetComponent<CurrentWorldIndex>();
+            DontDestroyOnLoad(currentWorldIndex);
+        }
+
+        // Get the current world Data by using the world index value, and pulling out the index
+        return currentWorldIndex;
     }
 
     private void SetupWorldDropdown(CurrentWorldIndex currentIndex)
