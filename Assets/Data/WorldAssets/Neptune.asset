@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477133da11c8af94188eada761ab0c4a, type: 3}
+  m_Name: Neptune
+  m_EditorClassIdentifier: 
+  worldName: Neptune
+  sceneName: 
+  gravityMPS2: 11.15
+  minTempF: -360
+  maxTempF: -360
+  dayNightRotationLength:
+    days: 0
+    hours: 16
+    minutes: 6
+  distanceFromSunAU: 30.05
+  optGroundMaterial: {fileID: 0}
+  parentBody: N/A

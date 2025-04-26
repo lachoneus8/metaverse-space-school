@@ -51,5 +51,8 @@ public class WorldData : ScriptableObject
     [Tooltip("This field is optional.  Only use it if scene is set to the generic world scene")]
     public Material optGroundMaterial;
 
+    [Tooltip("The parent body for the world.  This will be empty if the body orbits the Sun")]
+    public string parentBody;
+
     #endregion
 }
