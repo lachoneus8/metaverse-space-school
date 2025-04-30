@@ -1,0 +1,19 @@
+Body,Gravity (m/s²),Min Temp at Equator (°F),Max Temp at Equator (°F),Rotation Length (days, hours, minutes),Distance from Sun (AU),Parent Body
+Mercury,3.70,-290,800,176,0,0,0.39,N/A
+Venus,8.87,870,870,116,18,0,0.72,N/A
+Earth,9.81,68,136,0,24,0,1.00,N/A
+Moon,1.62,-290,260,29,12,44,1.00,Earth
+Mars,3.73,-93,70,1,0,39,1.52,N/A
+Jupiter,25.92,-166,-166,0,9,55,5.2,N/A
+Io,1.79,-202,3000,1,18,27,5.2,Jupiter
+Europa,1.31,-260,-260,3,13,14,5.2,Jupiter
+Ganymede,1.43,-297,-171,7,3,42,5.2,Jupiter
+Callisto,1.24,-315,-225,16,16,32,5.2,Jupiter
+Saturn,10.44,-290,-220,0,10,33,9.58,N/A
+Titan,1.35,-290,-180,15,22,41,9.58,Saturn
+Uranus,8.69,-357,-330,0,17,14,19.22,N/A
+Neptune,11.15,-360,-360,0,16,6,30.05,N/A
+Triton,0.78,-391,-391,5,21,3,30.05,Neptune
+Pluto,0.62,-387,-369,6,9,17,39.48,N/A
+Charon,0.28,-364,-364,6,9,17,39.48,Pluto
+Ceres,0.27,-37,-37,0,9,4,2.77,N/A

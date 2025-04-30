@@ -18,6 +18,7 @@ public class TransitionController : MonoBehaviour
     public string MarsScene;
     public string EarthScene;
     public string ClassroomScene;
+    public string GenericScene;
 
     public GameObject WarpEffect;
 
@@ -73,6 +74,12 @@ public class TransitionController : MonoBehaviour
     {
         StartCoroutine(RunLaunch(ClassroomScene));
     }
+
+    public void GoToGenericWorld()
+    {
+        StartCoroutine(RunLaunch(GenericScene));
+    }
+
     public void Land()
     {
         StartCoroutine(RunLand());
